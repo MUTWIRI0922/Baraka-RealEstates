@@ -1,0 +1,14 @@
+.nav-bar {
+
+    top: 0;
+    z-index: 1000;
+}
+.nav-bar .container-fluid {
+ 
+}
+.carousel{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Main.css">
+    <title>Baraka Real Estates</title>
+
+</head>
+<body>
+    <!-- Top navigation -->
+    <div class="top-nav">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="p-2">
+                    <i class="bi bi-telephone-fill"></i> +123 456 7890
+                    <i class="bi bi-envelope-fill ms-3"></i>
+                    <a href="mailto:info@barakarealestates.com">info@barakarealestates.com</a>
+                </div>
+                <div class="p-2">
+                    <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-house-heart"></i> Baraka Real Estates
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="toggler-icon">
+                        <i class="bi bi-list"></i> <!-- default hamburger -->
+                    </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto  mb-2 mb-lg-0" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search properties..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Carousel -->
+    <div class="carousel slide carousel-fade" id="mycarousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mycarousel" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mycarousel" data-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mycarousel" data-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="carousel">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Luxury Villa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Find Your Dream Home</h2>
+                    <p>Luxury properties in the most desirable locations</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="carousel">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Modern Interior">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Modern Interiors</h2>
+                    <p>Contemporary designs for modern living</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="carousel">
+                <img src="https://images.unsplash.com/photo-1600566753052-dc66bee5d72c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Country House">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Country Homes</h2>
+                    <p>Escape to your private retreat</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="About Baraka Real Estates" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title text-center text-success">Who We Are</h2>
+                    <p class="lead text-bold">Baraka Real Estates is a leading real estate company dedicated to providing exceptional services in property buying, selling, and renting.</p>
+                    <p>With a team of experienced professionals, we strive to make your real estate journey smooth and successful. Our mission is to deliver personalized solutions that meet the unique needs of each client, ensuring a seamless and rewarding experience in the real estate market.</p>
+                    <p>We pride ourselves on our integrity, expertise, and commitment to excellence in all aspects of real estate services.</p>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-success btn-lg">Learn More About Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center text-success mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-box text-center h-80">
+                        <div class="feature-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <h3>Land Sales</h3>
+                        <p>Extensive listings of properties to help you find the perfect home or investment opportunity.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="feature-box text-center h-80">
+                        <div class="feature-icon">
+                            <i class="bi bi-house-door"></i>
+                        </div>
+                        <h3>Property Sales</h3>
+                        <p>We help you buy and sell residential and commercial properties at the best market prices.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box text-center h-80">
+                        <div class="feature-icon">
+                            <i class="bi bi-key"></i>
+                        </div>
+                        <h3>Property Rental</h3>
+                        <p>Find your perfect rental property or list your property for rent with our expert assistance.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box text-center h-80">
+                        <div class="feature-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h3>Property Management</h3>
+                        <p>Comprehensive management services for property owners to maximize their investment returns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="bi bi-house-heart"></i>Baraka Real Estates</h5>
+                    <p>Your trusted partner in real estate. We're committed to helping you find your perfect property.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Contact Info</h5>
+                    <p><i class="bi bi-geo-alt"></i> Kerugoya,Kenya</p>
+                    <p><i class="bi bi-telephone"></i> +254 456 7890</p>
+                    <p><i class="bi bi-envelope"></i> info@barakarealestates.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="properties.html" class="text-white">Properties</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1)">
+            <div class="text-center">
+                <p>&copy; 2023 Baraka Real Estates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const toggler = document.querySelector('.navbar-toggler');
+        const icon = toggler.querySelector('i');
+
+        toggler.addEventListener('click', () => {
+            if (icon.classList.contains('bi-list')) {
+            icon.classList.replace('bi-list', 'bi-x-circle'); // change to close
+            } else {
+            icon.classList.replace('bi-x-circle', 'bi-list'); // change back to hamburger
+            }
+        });
+    </script>
+</body>
+</html>
