@@ -65,40 +65,24 @@
         </div>
     </nav>
     <!-- Property details section -->
-    <div class="container my-5">
+    <div class="container my-5 " id="details-section">
         <div class="row">
             <div class="col-md-6">
-                <img src="https://unsplash.com/photos/gray-and-white-concrete-house-2keCPb73aQY" class="img-fluid mb-4" alt="Property Image">
+                <img class="img-fluid mb-4" alt="Property Image" id="propertyImage">
             </div>
             <div class="col-md-6">
-                <h2>Beautiful Family Home</h2>
-                <p class="text-muted">123 Main St, Cityville</p>
-                <h4 class="text-success">$350,000</h4>
-                <p>Spacious 4-bedroom, 3-bathroom home with a large backyard, modern kitchen, and close to schools and parks.</p>
-                <ul class="list-unstyled">
-                    <li><strong>Bedrooms:</strong> 4</li>
-                    <li><strong>Bathrooms:</strong> 3</li>
-                    <li><strong>Square Feet:</strong> 2,500 sqft</li>
-                    <li><strong>Lot Size:</strong> 0.25 acres</li>
-                    <li><strong>Year Built:</strong> 2015</li>
-                </ul>
+
+                <p class="text-muted" id="propertyTitle"></p>
+                <h4 class="text-success" id="propertyPrice"></h4>
+                    <ul>
+                            <li id="propertyBeds"></li>
+                            <li id="propertyBaths"></li>
+                            <li id="propertySize"></li>
+                    </ul>
                 <a href="#" class="btn btn-primary mt-3">Contact Agent</a>
             </div>
         </div>
-        <div class="row row-cols-md-4">
-            <div class="col">
-                <img src="https://unsplash.com/photos/gray-and-white-concrete-house-2keCPb73aQY" alt="Property 1" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="https://unsplash.com/photos/brown-and-white-concrete-house-under-blue-sky-during-daytime-XGvwt544g8k" alt="Property 2" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="https://unsplash.com/photos/white-and-brown-concrete-house-2keCPb73aQY" alt="Property 3" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="https://unsplash.com/photos/brown-and-white-concrete-house-under-blue-sky-during-daytime-XGvwt544g8k" alt="Property 4" class="img-fluid">
-            </div>
-        </div>
+
     </div>
     <footer>
         <div class="container">
@@ -149,6 +133,23 @@
             icon.classList.replace('bi-x-circle', 'bi-list'); // change back to hamburger
             }
         });
+    </script>
+    <script>
+    const property = JSON.parse(sessionStorage.getItem("selectedProperty"));
+
+    if (property) {
+        document.getElementById("propertyTitle").textContent = property.title;
+        document.getElementById("propertyImage").src = property.img;
+        document.getElementById("propertyBeds").textContent = property.beds;
+        document.getElementById("propertyBaths").textContent = property.baths;
+        document.getElementById("propertySize").textContent = property.size;
+        document.getElementById("propertyPrice").textContent = property.price;
+
+        // ✅ Clear after showing
+        sessionStorage.removeItem("selectedProperty");
+    } else {
+        document.getElementById("details-section").innerHTML = "<p>No property selected.</p>";
+    }
     </script>
 </body>
 </html>
